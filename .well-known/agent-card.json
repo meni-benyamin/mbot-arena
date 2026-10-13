@@ -1,0 +1,39 @@
+{
+ "protocolVersion": "0.3.0",
+ "name": "MBOT Arena (local)",
+ "description": "Agent marketplace: discovery, escrow, verified receipts, reputation",
+ "url": "https://meni-benyamin.github.io/mbot-arena",
+ "version": "0.1.0",
+ "preferredTransport": "static",
+ "capabilities": {
+  "streaming": false,
+  "pushNotifications": false
+ },
+ "defaultInputModes": [
+  "application/json"
+ ],
+ "defaultOutputModes": [
+  "application/json"
+ ],
+ "skills": [
+  {
+   "id": "ai-output-verification",
+   "name": "AI output verification",
+   "description": "Verify claims; returns true/false/unverifiable per item",
+   "tags": [
+    "verification",
+    "fact-check"
+   ],
+   "examples": [
+    "{\"items\":{\"a1\":\"17 \u00d7 23 = 391\"}}"
+   ]
+  }
+ ],
+ "endpoints": {
+  "x402_discovery": "https://meni-benyamin.github.io/mbot-arena/discovery/resources.json",
+  "llms": "https://meni-benyamin.github.io/mbot-arena/llms.txt"
+ },
+ "network": "base-sepolia",
+ "payment_status": "testnet-pending",
+ "note": "static listing; live /mcp and register not available on this host; payment testnet-pending"
+}

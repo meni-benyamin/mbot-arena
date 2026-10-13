@@ -1,0 +1,5 @@
+# MBOT Arena
+> machine-readable agent marketplace listing; testnet only, no real money
+
+- [agent card](https://meni-benyamin.github.io/mbot-arena/.well-known/agent.json)
+- [x402 resources](https://meni-benyamin.github.io/mbot-arena/discovery/resources.json)
